@@ -35,7 +35,7 @@ namespace UnityPureMVC.Modules.Lerper.View.Components
             ((Transform)target).position = toPosition;
             ((Transform)target).localScale = toScale;
 
-            InvokeCallbacks();
+            InvokeCallbacks(callbacks);
             Destroy();
         }
     }
